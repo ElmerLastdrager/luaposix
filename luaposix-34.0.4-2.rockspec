@@ -1,4 +1,4 @@
-local _MODREV, _SPECREV = '34.0.4', '-1'
+local _MODREV, _SPECREV = '34.0.4b', '-1'
 
 package = 'luaposix'
 version = _MODREV .. _SPECREV
@@ -20,7 +20,7 @@ dependencies = {
 }
 
 source = {
-   url = 'http://github.com/luaposix/luaposix/archive/v' .. _MODREV .. '.zip',
+   url = 'http://github.com/elmerlastdrager/luaposix/archive/v' .. _MODREV .. '.zip',
    dir = 'luaposix-' .. _MODREV,  
 }
 
@@ -49,6 +49,6 @@ if _MODREV == 'git' then
    dependencies[#dependencies + 1] = 'ldoc'
 
    source = {
-      url = 'git://github.com/luaposix/luaposix.git',
+      url = 'git://github.com/elmerlastdrager/luaposix.git',
    }
 end
